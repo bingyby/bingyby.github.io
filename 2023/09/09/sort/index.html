@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Hexo</title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/" class="header-nav-link" >
+                Home
+            </a>
+            
+
+            
+            <a href="/archives" class="header-nav-link">
+                Archives
+            </a>
+            
+
+            
+            <a href="/tags" class="header-nav-link">
+                Tags
+            </a>
+            
+
+            
+        </nav>
+    </div>
+</header>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/" class="mobile-nav-title-link">John Doe's Blog</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/" class="mobile-nav-link">Home</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/archives" class="mobile-nav-link">Archives</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/tags" class="mobile-nav-link">Tags</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/about/" class="mobile-nav-link">About</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">sort</h2>
+            <div class="post-meta">
+                <span class="post-time">2023-09-09</span>
+                
+                <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8-%EF%BC%9A"><span class="toc-text">注 ：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%98%E5%8D%8A%E6%9F%A5%E6%89%BE"><span class="toc-text">折半查找</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%9A"><span class="toc-text">注意：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-text">一种方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%A3%E5%88%97%EF%BC%88Hash%EF%BC%89"><span class="toc-text">什么是散列（Hash）</span></a>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <h5 id="注-："><a href="#注-：" class="headerlink" title="注 ："></a>注 ：</h5><p><code>dic[4000][25]</code>是一个二维数组，这个地方写错出现了 <del>运行时错误</del> ，读入时候按照文件读入，</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">FILE * in;</span><br><span class="line">in =fopen(<span class="string">&quot;dictionary3000.txt&quot;</span>,<span class="string">&quot;r&quot;</span>);</span><br><span class="line"><span class="keyword">while</span> (<span class="built_in">fscanf</span>(in, <span class="string">&quot;%s&quot;</span>, dic[all]) != EOF)<span class="comment">//指针，类型，读入的数组</span></span><br><span class="line">    &#123;</span><br><span class="line">        all++;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>switch - case</code>的使用</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (op)<span class="comment">//记得加括号和花括号</span></span><br><span class="line">&#123;<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">&#123;<span class="comment">//如果内部有定义变量，那就加括号，否则不加大括号。</span></span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h2><blockquote>
+<p>折半查找（Binary Search）也被称为二分查找，是一种常见的查找算法，适用于已排序的数组。以下是C语言中实现折半查找的一些要点：</p>
+</blockquote>
+<ol>
+<li><p>确定查找的区间<br>需要确立查找区间的左端点<code>left</code>和右端点<code>right</code>，最开始时左端点可以设置为数组的第一个元素，右端点设置为最后一个元素。</p>
+</li>
+<li><p>确定中间值<br>每次查找时需要找出区间的中间值，通过计算左右端点的平均值得出。</p>
+</li>
+<li><p>比较中间值与查找值<br>将中间值与查找值进行比较，如果中间值等于查找值，则查找成功并返回其下标；如果中间值大于查找值，则将右端点向左移；如果中间值小于查找值，则将左端点向右移。</p>
+</li>
+<li><p>循环查找<br>通过不断地移动左右端点，并重新计算中间值的方式，不断缩小查找区间，直到找到了目标值或者确定不存在。</p>
+</li>
+</ol>
+<p>需要注意的是，在使用折半查找时必须确保数组已经按照从小到大的顺序排列。如果数组未排序，则需要先进行排序<code>qsort</code>。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> l = left, r = right;</span><br><span class="line">    <span class="type">int</span> mid = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (l &lt;= r)<span class="comment">//这里一定要记得等号</span></span><br><span class="line">    &#123;</span><br><span class="line">        num++;</span><br><span class="line">        mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">strcmp</span>(dic[mid], a) == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">strcmp</span>(dic[mid], a) &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            r = mid - <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            l = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>这里的right一定要是最后一个元素的角标，按照<code>count++</code>读入的最后的<code>count</code>是最后一个元素的角标加一。</p>
+<h2 id="一种方法"><a href="#一种方法" class="headerlink" title="一种方法"></a>一种方法</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt;= all; i++)</span><br><span class="line">  &#123;</span><br><span class="line">     number[dic[i][<span class="number">0</span>] - <span class="string">&#x27;a&#x27;</span>]++;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于一个已经排序的数组 <code>dic[all]</code>，按照首字母设计索引。a对应 <code>number[0]</code></p>
+<h2 id="什么是散列（Hash）"><a href="#什么是散列（Hash）" class="headerlink" title="什么是散列（Hash）"></a>什么是散列（Hash）</h2><p>Hash是一种将任意长度的数据通过 <strong>散列算法</strong> 转换成固定长度数据的技术。Hash函数能够将任意长度的输入转换为固定长度的输出，这个输出通常被称为hash值、哈希码或者摘要。常见的散列算法有MD5、SHA-1、SHA-256等。<del>Hash值可以用于数据校验、密码存储、数字签名等应用场景。</del></p>
+
+        </div>
+        
+    </article>
+</div>
+<div class="paginator">
+    
+        
+            <a class="prev" href="/2023/09/09/emo/">
+                <i class="iconfont icon-prev"></i>
+                <span class="nav-default">emo</span>
+                <span class="nav-mobile">Prev</span>
+            </a>
+        
+        
+            <a class="next" href="/2023/09/09/hello-world/">
+                <span class="nav-default">Hello World</span>
+                <span class="nav-mobile">Next</span>
+                <i class="iconfont icon-next"></i>
+            </a>
+        
+    
+</div>
+<div id="comment-container"></div>
+    </div>
+</div>
+<footer class="footer-social">
+    
+
+    
+
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+            2023
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://github.com/iJinxin">John Doe</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
+            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+        </p>
+    </div>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    
+
+</script>
+</html>
